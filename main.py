@@ -10,7 +10,7 @@ class Client:
     
     def connect_for_get(self, target: str):
         self.req = requests.get(self.url)
-        return BeautifulSoup.get
+        return BeautifulSoup.get()
 
 client = Client("https://roblox.com")
 client.connect_for_get(target="a")
